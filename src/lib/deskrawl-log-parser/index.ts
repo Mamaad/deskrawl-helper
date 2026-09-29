@@ -73,7 +73,7 @@ export function parseDeskrawlLog(input:string):LogSummary{
  const times=lines.map(parseTime).filter((v):v is number=>v!==undefined);
  let elapsedSeconds: number|undefined;
  if(times.length>=2){
-   let first=times[0],last=times[times.length-1];
+   const first=times[0]; let last=times[times.length-1];
    if(last<first&&first<86400&&last<86400)last+=86400;
    const span=last-first;if(span>0)elapsedSeconds=span;
  }
