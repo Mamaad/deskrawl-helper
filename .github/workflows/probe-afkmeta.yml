@@ -1,4 +1,4 @@
-name: Probe AFK Meta Sorcerer
+name: Sync AFK Meta talent data
 
 on:
   push:
@@ -6,17 +6,28 @@ on:
       - scripts/probe-afkmeta.mjs
       - .github/workflows/probe-afkmeta.yml
 
+permissions:
+  contents: write
+
 jobs:
-  probe:
+  sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
       - run: node scripts/probe-afkmeta.mjs
-      - uses: actions/upload-artifact@v4
-        with:
-          name: afkmeta-sorcerer
-          path: afkmeta-sorcerer.json
-          retention-days: 1
+      - name: Commit current snapshot
+        run: |
+          git config user.name "deskrawl-data-bot"
+          git config user.email "deskrawl-data-bot@users.noreply.github.com"
+          git add src/data/afkmeta-talents.json
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            git commit -m "data: sync AFK Meta talent snapshot"
+            git push origin HEAD:main
+          fi
