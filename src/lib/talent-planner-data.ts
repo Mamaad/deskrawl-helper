@@ -1,49 +1,74 @@
+import snapshot from "@/data/afkmeta-talents.json";
+
 export type PlannerClass="warrior"|"sorcerer"|"hunter"|"monk";
-export type PlannerTalent={id:string;name:string;row:number;max:number;effect:string;requires?:string};
-export type PlannerTree={id:PlannerClass;name:string;stat:string;sourceLabel:string;sourceUrl:string;status:string;accent:string;talents:PlannerTalent[]};
-
-const warrior:PlannerTalent[]=[
-{id:"w-strength",name:"Strength",row:0,max:5,effect:"+25 Strength at max."},
-{id:"w-vitality",name:"Vitality",row:0,max:5,effect:"+250 Max HP at max."},
-{id:"w-armor",name:"Armor",row:0,max:5,effect:"+125 Armor and +125 Magic Resist at max."},
-{id:"w-as",name:"Attack Speed",row:0,max:5,effect:"+10% Attack Speed at max."},
-{id:"w-crit",name:"Critical Hit Chance",row:0,max:5,effect:"+10% Critical Hit Chance at max."},
-{id:"w-thorn",name:"Thorns",row:0,max:5,effect:"+15 Thorns at max."},
-{id:"w-critdmg",name:"Critical Hit Damage",row:5,max:5,effect:"+25% Critical Hit Damage at max.",requires:"Critical Hit Chance"},
-{id:"w-regen",name:"Life Regeneration",row:5,max:5,effect:"+20 Life Regeneration at max.",requires:"Vitality"},
-{id:"w-brutality",name:"Brutality",row:5,max:5,effect:"+50% damage to Injured targets at max."},
-{id:"w-ferocity",name:"Ferocity",row:5,max:5,effect:"+25% damage to Vulnerable targets at max."},
-{id:"w-inspiration",name:"Battle Inspiration",row:5,max:3,effect:"Sweep Strike can reduce Warcry cooldown."},
-{id:"w-thornboost",name:"Thorn Boost",row:5,max:5,effect:"+50% Thorns at max.",requires:"Thorns"},
-{id:"w-rending",name:"Rending Fury",row:10,max:1,effect:"Basic attacks can stack bonus Attack Speed.",requires:"Attack Speed"},
-{id:"w-strongmana",name:"Improve Strong Attack: Mana",row:10,max:5,effect:"Reduces Strong Attack mana cost by 25% at max."},
-{id:"w-warcry",name:"Improve Warcry: Cooldown",row:10,max:5,effect:"+25% Warcry cooldown reduction at max."},
-{id:"w-focus",name:"Focus",row:10,max:5,effect:"Basic attacks gain a chance to Stun.",requires:"Strength"},
-{id:"w-heavy",name:"Heavy Blow",row:10,max:5,effect:"Critical hits can inflict Vulnerable.",requires:"Ferocity"},
-{id:"w-channel",name:"Fury Channeling",row:10,max:3,effect:"Rage Shield generates Mana when activated."},
-{id:"w-beast",name:"Improve Minion [Beast]",row:15,max:1,effect:"Active Beast grants +5% Strength."},
-{id:"w-human",name:"Improve Minion [Humanoid]",row:15,max:1,effect:"Active Humanoid grants +15% EXP gain."},
-{id:"w-defense",name:"Defensive Stance",row:15,max:5,effect:"+30% Armor at max.",requires:"Armor"},
-{id:"w-manakill",name:"Restore Mana on Kill",row:15,max:5,effect:"Restores up to 10% Mana per kill.",requires:"Improve Strong Attack: Mana"},
-{id:"w-infusion",name:"Fury Infusion",row:15,max:1,effect:"+50% Strong Attack damage, with +75% Mana cost."},
-{id:"w-second",name:"Second Wind",row:15,max:1,effect:"Heals 20% when HP falls below 50%, with a 6s cooldown.",requires:"Life Regeneration"},
-{id:"w-undead",name:"Improve Minion [Undead]",row:20,max:1,effect:"Active Undead grants +50% Critical Hit Damage."},
-{id:"w-flame",name:"Improve Flame Strike: Damage",row:20,max:3,effect:"Flame Strike deals +45% damage at max."},
-{id:"w-valiant",name:"Improve Valiant Strike: Mana Gain",row:20,max:2,effect:"+4 Mana gain with Valiant Strike at max."},
-{id:"w-charge",name:"Charge",row:20,max:3,effect:"+60% damage to Stunned targets at max.",requires:"Focus"},
-{id:"w-vicious",name:"Vicious Thorns",row:20,max:1,effect:"Thorns can critically hit.",requires:"Thorn Boost"}
-];
-
-const pending=(id:PlannerClass,name:string,stat:string,accent:string,sourceUrl:string):PlannerTree=>({
- id,name,stat,accent,sourceUrl,
- sourceLabel:"Release tree · source page linked",
- status:"The release tree exists, but its current node rows are not available in the indexed source feed used by this build. The class stays selectable and the planner will accept the verified rows as soon as they can be imported; no guide-only or guessed talents are inserted.",
- talents:[]
-});
-
-export const plannerTrees:Record<PlannerClass,PlannerTree>={
- warrior:{id:"warrior",name:"Warrior",stat:"Strength",sourceLabel:"AFK Meta game-data snapshot · 27 Sep 2026",sourceUrl:"https://afkmeta.com/en/deskrawl/talents/warrior",status:"29 named combat talents from the AFK Meta Deskrawl snapshot. This snapshot is explicitly marked as demo-era data.",accent:"#b94a48",talents:warrior},
- sorcerer:pending("sorcerer","Sorcerer","Intelligence","#7166d9","https://afkmeta.com/en/deskrawl/talents/sorcerer"),
- hunter:pending("hunter","Hunter","Dexterity","#5e9d6c","https://afkmeta.com/en/deskrawl/talents/hunter"),
- monk:pending("monk","Monk","Dexterity","#d39748","https://afkmeta.com/en/deskrawl/talents/monk")
+export type PlannerTalent={
+ index:number;
+ id:string;
+ name:string;
+ row:number;
+ max:number;
+ requires:string;
+ effect:string;
 };
+export type LifeSkill={index:number;name:string;requires:string;gold:string;effects:string};
+export type PlannerTree={
+ id:PlannerClass;
+ name:string;
+ stat:string;
+ accent:string;
+ sourceUrl:string;
+ talents:PlannerTalent[];
+};
+
+type RawTalent={index:number;name:string;pointsSpent:number;maxPoints:number;requires:string;atMax:string};
+type RawClass={sourceUrl:string;title:string;talents:RawTalent[]};
+type RawSnapshot={
+ source:string;
+ fetchedAt:string;
+ classes:Record<PlannerClass,RawClass>;
+ lifeSkills:LifeSkill[];
+};
+
+const raw=snapshot as RawSnapshot;
+const meta:Record<PlannerClass,{name:string;stat:string;accent:string}>={
+ warrior:{name:"Warrior",stat:"Strength",accent:"#d34e4e"},
+ sorcerer:{name:"Sorcerer",stat:"Intelligence",accent:"#7c6cff"},
+ hunter:{name:"Hunter",stat:"Dexterity",accent:"#61b477"},
+ monk:{name:"Monk",stat:"Dexterity",accent:"#d7a24d"}
+};
+
+const slug=(value:string)=>value.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+
+export const plannerTrees=Object.fromEntries((Object.keys(meta) as PlannerClass[]).map(id=>{
+ const source=raw.classes[id];
+ const info=meta[id];
+ const talents=source.talents.map((talent,index):PlannerTalent=>({
+   index:talent.index,
+   id:`${id}-${index+1}-${slug(talent.name)}`,
+   name:talent.name,
+   row:talent.pointsSpent,
+   max:talent.maxPoints,
+   requires:talent.requires,
+   effect:talent.atMax
+ }));
+ return [id,{id,...info,sourceUrl:source.sourceUrl,talents} satisfies PlannerTree];
+})) as Record<PlannerClass,PlannerTree>;
+
+export const lifeSkills=raw.lifeSkills;
+export const talentSnapshot={
+ source:raw.source,
+ fetchedAt:raw.fetchedAt,
+ combatTalentCount:Object.values(raw.classes).reduce((sum,c)=>sum+c.talents.length,0),
+ lifeSkillCount:raw.lifeSkills.length
+};
+
+export function talentElement(talent:PlannerTalent){
+ const hay=(talent.name+" "+talent.effect).toLowerCase();
+ if(/lightning|electro|storm|thunder|static|plasma/.test(hay))return "lightning";
+ if(/fire|flame|burn|ignite|combust|cataclysm|immolat/.test(hay))return "fire";
+ if(/cold|frost|ice|frozen|chill|permafrost/.test(hay))return "frost";
+ if(/poison|venom|toxin/.test(hay))return "poison";
+ if(/bleed|blood|hemorrhage/.test(hay))return "blood";
+ if(/mana|arcane|intelligence/.test(hay))return "arcane";
+ return "neutral";
+}

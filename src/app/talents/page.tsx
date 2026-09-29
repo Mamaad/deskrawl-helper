@@ -1,14 +1,17 @@
 "use client";
 import {TalentPlanner} from "@/components/talents/talent-planner";
-import {useI18n} from "@/components/i18n-provider";
+import {talentSnapshot} from "@/lib/talent-planner-data";
 
 export default function TalentsPage(){
- const {t}=useI18n();
  return <>
-  <div className="eyebrow">{t("talents.eyebrow")}</div>
-  <h1 className="page-title">{t("talents.title")}</h1>
-  <p className="lead">Pick a class, spend points directly on the tree, remove them with − or right-click, and copy a build link. The interaction follows the same planner idea as AFK Meta without copying its page layout.</p>
-  <div className="spacer"/>
+  <div className="talent-page-intro">
+   <div>
+    <div className="eyebrow">COMBAT TALENTS // LIVE DATA SNAPSHOT</div>
+    <h1 className="page-title">Build the tree.</h1>
+    <p className="lead">All four class trees are loaded from the current AFK Meta Deskrawl talent pages. Spend points directly on the constellation, inspect a talent, switch to the full combat table, or browse all Life Skills.</p>
+   </div>
+   <div className="talent-data-stamp"><strong>{talentSnapshot.combatTalentCount}</strong><span>combat talent rows</span><b>+</b><strong>{talentSnapshot.lifeSkillCount}</strong><span>Life Skills</span></div>
+  </div>
   <TalentPlanner/>
  </>;
 }
