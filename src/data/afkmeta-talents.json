@@ -1,0 +1,1923 @@
+{
+  "source": "AFK Meta",
+  "fetchedAt": "2026-09-29T18:55:37.097Z",
+  "classes": {
+    "warrior": {
+      "sourceUrl": "https://afkmeta.com/en/deskrawl/talents/warrior",
+      "title": "Deskrawl Warrior Talent Planner: Combat Talents & Life Skills | AFK Meta",
+      "talents": [
+        {
+          "index": 1,
+          "name": "Strength",
+          "pointsSpent": 0,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "+ 50 Strength"
+        },
+        {
+          "index": 2,
+          "name": "Vitality",
+          "pointsSpent": 0,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "+ 300 Max HP and + 18 Life Regen"
+        },
+        {
+          "index": 3,
+          "name": "Armor",
+          "pointsSpent": 0,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "+ 200 Armor and + 200 Magic Resist"
+        },
+        {
+          "index": 4,
+          "name": "Hold the Line",
+          "pointsSpent": 5,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "Take 15% less damage while at least 3 living enemies are nearby."
+        },
+        {
+          "index": 5,
+          "name": "Critical Hit Chance",
+          "pointsSpent": 0,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "+ 10% Critical Hit Chance"
+        },
+        {
+          "index": 6,
+          "name": "Critical Hit Damage",
+          "pointsSpent": 5,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 80% Critical Hit Damage"
+        },
+        {
+          "index": 7,
+          "name": "Thorn",
+          "pointsSpent": 0,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 64 Thorn"
+        },
+        {
+          "index": 8,
+          "name": "Demoralizing Shout",
+          "pointsSpent": 40,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "Casting a [Warcry] reduces nearby enemies’ damage dealt by — for — ."
+        },
+        {
+          "index": 9,
+          "name": "Weakness Mastery",
+          "pointsSpent": 20,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 80% Damage to Vulnerable targets"
+        },
+        {
+          "index": 10,
+          "name": "Cleaving Rage",
+          "pointsSpent": 5,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "Casting a [Basic Attack] ability grants + — Attack Speed per stack (up to 10 stacks)."
+        },
+        {
+          "index": 11,
+          "name": "Battle Inspiration",
+          "pointsSpent": 30,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Casting a [Warcry] reduces the other [Special] ability’s remaining cooldown by 1 second. Affects: Rage Shout, Rage Shield, Deadly Hook, Earthstrike, Iron Thorn, Molten Might"
+        },
+        {
+          "index": 12,
+          "name": "Heavy Blow",
+          "pointsSpent": 10,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "[Strong Attack] direct critical hits inflict [Vulnerable] for — ."
+        },
+        {
+          "index": 13,
+          "name": "Thorn Boost",
+          "pointsSpent": 5,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "+ 100% Thorn"
+        },
+        {
+          "index": 14,
+          "name": "Enhance Strong Attack: Mana",
+          "pointsSpent": 15,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "+ -25% [Strong Attack] Mana Cost reduction. Affects: Flame Strike, Half Moon Slash, Whirlwind, Rending Onslaught"
+        },
+        {
+          "index": 15,
+          "name": "Rage Infusion",
+          "pointsSpent": 50,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "+ 150% [Strong Attack] Damage, but also + 100% Mana Cost. Affects: Flame Strike, Half Moon Slash, Whirlwind, Rending Onslaught"
+        },
+        {
+          "index": 16,
+          "name": "Enhance Warcry: Cooldown",
+          "pointsSpent": 20,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "+ 30% [Warcry] Abilities Cooldown reduction. Affects: Rage Shout, Rage Shield, Molten Might"
+        },
+        {
+          "index": 17,
+          "name": "Rage Channeling",
+          "pointsSpent": 15,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "Generate 64 Mana upon activating Rage Shield"
+        },
+        {
+          "index": 18,
+          "name": "Defensive Stance",
+          "pointsSpent": 15,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "+ 55% Armor"
+        },
+        {
+          "index": 19,
+          "name": "Second Wind",
+          "pointsSpent": 50,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "Heal 50% when HP drop below 50% Max HP. (6 seconds cooldown)"
+        },
+        {
+          "index": 20,
+          "name": "Concussive Strikes",
+          "pointsSpent": 20,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "[Basic Attack] have 15% to stun the enemy."
+        },
+        {
+          "index": 21,
+          "name": "Press the Advantage",
+          "pointsSpent": 40,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 160% Damage on Stunned targets."
+        },
+        {
+          "index": 22,
+          "name": "Spreading Flame",
+          "pointsSpent": 20,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "Flame Strike splashes — weapon damage as Fire to nearby enemies."
+        },
+        {
+          "index": 23,
+          "name": "Enhance Valiant Strike: Mana Gain",
+          "pointsSpent": 15,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 16 Mana Gain from Valiant Strike. Affects: Valiant Strike"
+        },
+        {
+          "index": 24,
+          "name": "Vicious Thorns",
+          "pointsSpent": 10,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Thorn can trigger Critical Hit."
+        },
+        {
+          "index": 25,
+          "name": "Hemorrhage",
+          "pointsSpent": 40,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "When you kill a Bleeding enemy, deal 150% of its remaining Bleed damage as a Physical blood explosion to other enemies within 3 meters."
+        },
+        {
+          "index": 26,
+          "name": "Bloodletting",
+          "pointsSpent": 30,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "+ 25% [Bleed] Ability Damage. Affects: Bloodblade, Rending Onslaught"
+        },
+        {
+          "index": 27,
+          "name": "Enhance Rage Shout",
+          "pointsSpent": 15,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "Rage Shout's Attack Speed bonus is — stronger and lasts — longer."
+        },
+        {
+          "index": 28,
+          "name": "Crescent Harvest",
+          "pointsSpent": 20,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "Half Moon Slash deals + 100% Damage. Each enemy killed by Half Moon Slash restores 30% of your Max Mana. Affects: Half Moon Slash"
+        },
+        {
+          "index": 29,
+          "name": "Charged and Ready",
+          "pointsSpent": 30,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Basic Attack hits grant a charge. At — charges, gain + — to all damage for — ."
+        },
+        {
+          "index": 30,
+          "name": "Ironward",
+          "pointsSpent": 60,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Each Basic Attack hit adds a shield equal to 3% of your Max HP for 4s ."
+        },
+        {
+          "index": 31,
+          "name": "Peak Condition",
+          "pointsSpent": 40,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "+ 75% All Damage while you are Healthy (above 80% HP)."
+        },
+        {
+          "index": 32,
+          "name": "Deepening Wounds",
+          "pointsSpent": 50,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "[Bleed] Ability hits have a 30% chance to execute non-Boss enemies below 30% HP."
+        },
+        {
+          "index": 33,
+          "name": "Enhance Valiant Strike: Vulnerable Chance",
+          "pointsSpent": 5,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "Valiant Strike has an additional 50% chance to inflict [Vulnerable] . Affects: Valiant Strike"
+        },
+        {
+          "index": 34,
+          "name": "Returning Fury",
+          "pointsSpent": 30,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Each direct enemy hit restores 1% of your Max Mana."
+        },
+        {
+          "index": 35,
+          "name": "Butcher's Rhythm",
+          "pointsSpent": 50,
+          "maxPoints": 3,
+          "requires": "—",
+          "atMax": "Rending Onslaught carves 3 additional cuts. Affects: Rending Onslaught"
+        },
+        {
+          "index": 36,
+          "name": "Focused Technique",
+          "pointsSpent": 10,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "[Basic Attack] damage + 100% , but Mana gained from Basic Attacks − -50% . Affects: Valiant Strike, Cleave, Bloodblade, Steady Blow"
+        },
+        {
+          "index": 37,
+          "name": "Forge Within",
+          "pointsSpent": 60,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Consumes 1% of your Max Mana each second to gain + 75% [Strong Attack] damage and 20% reduced ability Mana cost."
+        },
+        {
+          "index": 38,
+          "name": "Bloodlust",
+          "pointsSpent": 60,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "When an enemy dies while Bleeding, or is slain by a [Bleed] Ability, gain a stack of [Bloodlust] for — , increasing your Damage by 50% per stack, up to 10 stacks."
+        },
+        {
+          "index": 39,
+          "name": "Counterattack Storm",
+          "pointsSpent": 60,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "After every 5 direct enemy hits, counterattack nearby enemies for 250% weapon damage as Physical damage."
+        },
+        {
+          "index": 40,
+          "name": "Ironblood",
+          "pointsSpent": 50,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "30% of your Max HP is added to your Thorn."
+        },
+        {
+          "index": 41,
+          "name": "Reaper's Toll",
+          "pointsSpent": 40,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "Whirlwind strikes and spins 100% faster. + 50% Movement Speed while channeling Whirlwind. Affects: Whirlwind"
+        }
+      ]
+    },
+    "sorcerer": {
+      "sourceUrl": "https://afkmeta.com/en/deskrawl/talents/sorcerer",
+      "title": "Deskrawl Sorcerer Talent Planner: Combat Talents & Life Skills | AFK Meta",
+      "talents": [
+        {
+          "index": 1,
+          "name": "Arcane Insight",
+          "pointsSpent": 0,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "+ 50 Intelligence"
+        },
+        {
+          "index": 2,
+          "name": "Mana Flow",
+          "pointsSpent": 0,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 32 Max Mana"
+        },
+        {
+          "index": 3,
+          "name": "Frost Armor",
+          "pointsSpent": 0,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "Gain 280 Armor and increase your total Armor by 24% ."
+        },
+        {
+          "index": 4,
+          "name": "Arcane Reach",
+          "pointsSpent": 0,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "+ 36% [Basic Attack] Range. Affects: Fire Ball, Ice Shards, Electrocute, Flame Lightning"
+        },
+        {
+          "index": 5,
+          "name": "Searing Edge",
+          "pointsSpent": 0,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "+ 15% [Basic Attack] Critical Hit Chance. Affects: Fire Ball, Ice Shards, Electrocute, Flame Lightning"
+        },
+        {
+          "index": 6,
+          "name": "Ignite",
+          "pointsSpent": 30,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Critical Hits have a 100% chance to apply [Burn] to the victim."
+        },
+        {
+          "index": 7,
+          "name": "Cold Retribution",
+          "pointsSpent": 10,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Gain 10% increased Armor. Melee attackers have a 100% chance to receive [Chill] for — ."
+        },
+        {
+          "index": 8,
+          "name": "Shattering Ice",
+          "pointsSpent": 60,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "+ 50% Critical Hit Chance against [Frozen] enemies."
+        },
+        {
+          "index": 9,
+          "name": "Immolation",
+          "pointsSpent": 10,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Fire Ball has a 15% chance to apply [Burn] to the target."
+        },
+        {
+          "index": 10,
+          "name": "Frost Mastery",
+          "pointsSpent": 5,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "+ 70% Cold Damage"
+        },
+        {
+          "index": 11,
+          "name": "Conflagration",
+          "pointsSpent": 20,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 96% Damage to Burning targets"
+        },
+        {
+          "index": 12,
+          "name": "Mana Regeneration",
+          "pointsSpent": 5,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "+ 6 Mana Regen"
+        },
+        {
+          "index": 13,
+          "name": "Flash Freeze",
+          "pointsSpent": 30,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Applying [Chill] to an enemy has a 15% chance to also apply [Frozen] ."
+        },
+        {
+          "index": 14,
+          "name": "Combustion",
+          "pointsSpent": 60,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "When you kill an enemy affected by [Burn] , there is a 50% chance to trigger a fiery explosion, dealing 100% weapon damage to nearby enemies."
+        },
+        {
+          "index": 15,
+          "name": "Deep Chill",
+          "pointsSpent": 15,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "Your [Chill] is — more potent, slowing enemies more and lasting longer."
+        },
+        {
+          "index": 16,
+          "name": "Thunderstruck",
+          "pointsSpent": 10,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Lightning Storm has a 15% chance to apply [Short Stun] to enemies it hits for 1s ."
+        },
+        {
+          "index": 17,
+          "name": "Mana Conduit",
+          "pointsSpent": 5,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "[Basic Attack] generates + 6 Mana. Affects: Fire Ball, Ice Shards, Electrocute, Flame Lightning"
+        },
+        {
+          "index": 18,
+          "name": "Electrical Shield",
+          "pointsSpent": 15,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 16% Armor. Melee attackers have a 32% chance to grant you 5 Mana."
+        },
+        {
+          "index": 19,
+          "name": "Storm Executioner",
+          "pointsSpent": 5,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "+ 40% Lightning Damage. + 30% Damage to Elite enemies."
+        },
+        {
+          "index": 20,
+          "name": "Flame Ward",
+          "pointsSpent": 5,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 40% Fire Damage. + 32% Magic Resist."
+        },
+        {
+          "index": 21,
+          "name": "Enhance Ice Shards: Damage",
+          "pointsSpent": 20,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 80% [Ice Shards] Damage. Affects: Ice Shards"
+        },
+        {
+          "index": 22,
+          "name": "Enhance Electrocute: Mana Gain",
+          "pointsSpent": 40,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "+ 12 Mana Gain from [Electrocute] . Affects: Electrocute"
+        },
+        {
+          "index": 23,
+          "name": "Enhance Ice Meteor: Mana Cost",
+          "pointsSpent": 20,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ -32% [Ice Meteor] Mana Cost reduction. Affects: Ice Meteor"
+        },
+        {
+          "index": 24,
+          "name": "Enhance Flame Breath: Crit Damage",
+          "pointsSpent": 15,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "+ 120% [Flame Breath] Critical Hit Damage. Affects: Flame Breath"
+        },
+        {
+          "index": 25,
+          "name": "Storm Conduit",
+          "pointsSpent": 60,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "[Electrocute] has a 20% chance to also cast [Lightning Storm] ."
+        },
+        {
+          "index": 26,
+          "name": "Static Charge",
+          "pointsSpent": 30,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Lightning abilities have a 100% chance to apply [Electrostatic] to enemies they hit."
+        },
+        {
+          "index": 27,
+          "name": "Frost Alacrity",
+          "pointsSpent": 15,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "Reduces the cooldown of Frost abilities by 24% . Affects: Ice Shards, Ice Meteor, Frost Beam, Ice Nova, Ice Block"
+        },
+        {
+          "index": 28,
+          "name": "Plasma Conduction",
+          "pointsSpent": 50,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "[Flame Lightning] deals + 48% damage to enemies affected by [Burn] and + 48% damage per stack of [Electrostatic] on the enemy. Both bonuses apply when the enemy has both effects."
+        },
+        {
+          "index": 29,
+          "name": "Frost Beam Expansion",
+          "pointsSpent": 50,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "[Frost Beam] 's length and width are increased by 50% . Affects: Frost Beam"
+        },
+        {
+          "index": 30,
+          "name": "Frozen Reservoir",
+          "pointsSpent": 40,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "Casting [Ice Nova] has a 100% chance to restore 130 Mana."
+        },
+        {
+          "index": 31,
+          "name": "Elemental Fury",
+          "pointsSpent": 15,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "[Fire Elemental] attacks 90% faster. Affects: Fire Elemental"
+        },
+        {
+          "index": 32,
+          "name": "Frozen Renewal",
+          "pointsSpent": 40,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "Restore 25% of your maximum Health every second during [Ice Block] ."
+        },
+        {
+          "index": 33,
+          "name": "Cataclysm",
+          "pointsSpent": 40,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "[Fire Meteor] deals + 64% Damage but has a -40% longer Cooldown. Affects: Fire Meteor"
+        },
+        {
+          "index": 34,
+          "name": "Flame Ward",
+          "pointsSpent": 50,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "While [Flame Aura] is active, gain + 80% Armor and Magic Resist."
+        },
+        {
+          "index": 35,
+          "name": "Lingering Storm",
+          "pointsSpent": 50,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "[Lightning Cloud] 's ground effect lasts 80% longer. Affects: Lightning Cloud"
+        },
+        {
+          "index": 36,
+          "name": "Permafrost",
+          "pointsSpent": 40,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "[Frozen] applied by you lasts — longer."
+        },
+        {
+          "index": 37,
+          "name": "Arcane Exposure",
+          "pointsSpent": 60,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Every — casts of [Strong Attack] apply [Vulnerable] to targets hit."
+        },
+        {
+          "index": 38,
+          "name": "Arcane Reservoir",
+          "pointsSpent": 20,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "40% of your Max Mana is added to Intelligence."
+        },
+        {
+          "index": 39,
+          "name": "Arcane Momentum",
+          "pointsSpent": 10,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Casting a [Special] Ability increases [Basic Attack] damage by 40% for 5s ."
+        },
+        {
+          "index": 40,
+          "name": "Current Transfer",
+          "pointsSpent": 50,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "When an enemy affected by [Electrostatic] dies, it has a 100% chance to apply [Electrostatic] to enemies within 1 ."
+        },
+        {
+          "index": 41,
+          "name": "Storm Mastery",
+          "pointsSpent": 20,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "Gain + 96% Critical Hit Damage to [Lightning] Abilities and + 24% Lightning Damage Reduction. Affects: Electrocute, Flame Lightning, Lightning Storm, Lightning Cloud"
+        }
+      ]
+    },
+    "hunter": {
+      "sourceUrl": "https://afkmeta.com/en/deskrawl/talents/hunter",
+      "title": "Deskrawl Hunter Talent Planner: Combat Talents & Life Skills | AFK Meta",
+      "talents": [
+        {
+          "index": 1,
+          "name": "Dexterity",
+          "pointsSpent": 0,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "+ 50 Dexterity"
+        },
+        {
+          "index": 2,
+          "name": "Dodge Chance",
+          "pointsSpent": 0,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 12% Dodge Chance"
+        },
+        {
+          "index": 3,
+          "name": "Attack Speed",
+          "pointsSpent": 0,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "+ 25% Attack Speed and + 5 Damage."
+        },
+        {
+          "index": 4,
+          "name": "Long Shot",
+          "pointsSpent": 0,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 120% Damage to Distant enemies."
+        },
+        {
+          "index": 5,
+          "name": "Fleet Footed",
+          "pointsSpent": 0,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "+ 24% Move Speed."
+        },
+        {
+          "index": 6,
+          "name": "Steady Aim",
+          "pointsSpent": 5,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "+ 36% [Strong Attack] Range. Affects: Steady Shot, Multishot, Rapid Fire, Venom Bolt"
+        },
+        {
+          "index": 7,
+          "name": "Sharpshooter",
+          "pointsSpent": 5,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "+ 18% Critical Hit Chance against Distant enemies."
+        },
+        {
+          "index": 8,
+          "name": "Venom Lore",
+          "pointsSpent": 5,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 48% Damage to Poisoned enemies and + 16% Poison Damage Reduction."
+        },
+        {
+          "index": 9,
+          "name": "Hardened Hide",
+          "pointsSpent": 40,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 48% Critical Damage Reduction."
+        },
+        {
+          "index": 10,
+          "name": "Survival Instinct",
+          "pointsSpent": 20,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 24% Dodge Chance while surrounded by at least 3 enemies."
+        },
+        {
+          "index": 11,
+          "name": "Forceful Volley",
+          "pointsSpent": 20,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "[Multishot] hits have a 24% chance to knock enemies back 2 ."
+        },
+        {
+          "index": 12,
+          "name": "Deadly Toxin",
+          "pointsSpent": 5,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ — [Poisoned] Damage and + — Duration."
+        },
+        {
+          "index": 13,
+          "name": "Quick Traps",
+          "pointsSpent": 20,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "+ 30% [Trap] Abilities Cooldown reduction. Affects: Poison Trap, Frost Trap"
+        },
+        {
+          "index": 14,
+          "name": "Arcane Knowledge",
+          "pointsSpent": 5,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "+ 50% Arcane Damage and + 20% Magic Resist."
+        },
+        {
+          "index": 15,
+          "name": "Concussive Force",
+          "pointsSpent": 15,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "[Shockwave] knocks enemies back an additional 2.5 ."
+        },
+        {
+          "index": 16,
+          "name": "Exposing Traps",
+          "pointsSpent": 60,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "[Trap] hits have a 100% chance to inflict [Vulnerable] for 3s ."
+        },
+        {
+          "index": 17,
+          "name": "Double Tap",
+          "pointsSpent": 30,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "[Basic Attack] has a 30% chance to strike twice."
+        },
+        {
+          "index": 18,
+          "name": "Lone Hunter",
+          "pointsSpent": 60,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "While no enemies are nearby, gain 30% Attack Speed and 70% Physical, Poison, and Arcane Damage."
+        },
+        {
+          "index": 19,
+          "name": "Rapid Reset",
+          "pointsSpent": 10,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Casting a [Strong Attack] reduces all [Trap] ability cooldowns by 2s . Affects: Poison Trap, Frost Trap"
+        },
+        {
+          "index": 20,
+          "name": "Efficient Assault",
+          "pointsSpent": 10,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "+ -5% [Strong Attack] Mana Cost reduction. Affects: Steady Shot, Multishot, Rapid Fire, Venom Bolt"
+        },
+        {
+          "index": 21,
+          "name": "Second Wind",
+          "pointsSpent": 15,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "While out of combat, gain + 24 Mana Regeneration."
+        },
+        {
+          "index": 22,
+          "name": "Oversized Traps",
+          "pointsSpent": 15,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "[Trap] size and trigger range increased by 60% . Affects: Poison Trap, Frost Trap"
+        },
+        {
+          "index": 23,
+          "name": "Improved Poison Shot",
+          "pointsSpent": 20,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "Poison Shot has + 30% chance to apply [Poisoned] . Affects: Poison Shot"
+        },
+        {
+          "index": 24,
+          "name": "Improved Arcane Bomb",
+          "pointsSpent": 15,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "Arcane Bomb splash radius increased by 48% . Affects: Arcane Bomb"
+        },
+        {
+          "index": 25,
+          "name": "Marked for Death",
+          "pointsSpent": 40,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "[Vulnerable] applied by you lasts — longer."
+        },
+        {
+          "index": 26,
+          "name": "Deadly Traps",
+          "pointsSpent": 50,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 32% Critical Hit Chance to [Trap] Abilities Affects: Poison Trap, Frost Trap"
+        },
+        {
+          "index": 27,
+          "name": "Deadly Knife Barrage",
+          "pointsSpent": 40,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "[Knife Barrage] gains + 24% Critical Hit Chance. Affects: Knife Barrage"
+        },
+        {
+          "index": 28,
+          "name": "Knife Storm",
+          "pointsSpent": 50,
+          "maxPoints": 3,
+          "requires": "—",
+          "atMax": "[Knife Barrage] targets 3 additional enemies. Affects: Knife Barrage"
+        },
+        {
+          "index": 29,
+          "name": "Improved Twin Arrows",
+          "pointsSpent": 50,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "After hitting an enemy each [Twin Arrows] projectile ricochets to another random enemy. [Twin Arrows] deals 80% more damage. Affects: Twin Arrows"
+        },
+        {
+          "index": 30,
+          "name": "Improved Steady Shot",
+          "pointsSpent": 20,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "[Steady Shot] deals 16% more damage for each enemy its projectile has already pierced."
+        },
+        {
+          "index": 31,
+          "name": "Empowered Phantom Form",
+          "pointsSpent": 50,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "[Phantom Form] 's Dodge Chance and Attack Speed bonuses are increased by — ."
+        },
+        {
+          "index": 32,
+          "name": "Physical Brutality",
+          "pointsSpent": 15,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 120% Critical Hit Damage to [Physical] Abilities Affects: Knife Barrage, Twin Arrows, Steady Shot, Rapid Fire"
+        },
+        {
+          "index": 33,
+          "name": "Venomous Leech",
+          "pointsSpent": 30,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "[Poisoned] ticks have a 75% chance to trigger Life on Hit."
+        },
+        {
+          "index": 34,
+          "name": "Sustained Fire",
+          "pointsSpent": 40,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "[Rapid Fire] 's channel duration is increased by 36% . Affects: Rapid Fire"
+        },
+        {
+          "index": 35,
+          "name": "Critical Injection",
+          "pointsSpent": 60,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Critical Hits with [Poison] abilities have a 100% chance to apply an additional stack of [Poisoned] ."
+        },
+        {
+          "index": 36,
+          "name": "Arcane Corrosion",
+          "pointsSpent": 60,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "[Arcane Arrowstorm] hits have a 100% chance to apply [Arcane Corrosion] . A hit from [Arcane Bomb] or [Multishot] consumes all stacks and deals 150% weapon damage at 1 stack or 350% at 2 stacks as Arcane damage."
+        },
+        {
+          "index": 37,
+          "name": "Cornered Beast",
+          "pointsSpent": 10,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Taking damage while below 60% Health inflicts [Stunned] on enemies within 5m for — . This can trigger once every 10s ."
+        },
+        {
+          "index": 38,
+          "name": "Dazzling Recovery",
+          "pointsSpent": 50,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "Casting a [Blinding Shot] ability restores 80 Mana."
+        },
+        {
+          "index": 39,
+          "name": "Rapid Flare",
+          "pointsSpent": 40,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "+ 40% [Flare] Cooldown reduction. Affects: Flare"
+        },
+        {
+          "index": 40,
+          "name": "Arcane Charge",
+          "pointsSpent": 30,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Casting an [Arcane] ability grants [Arcane Charge] for 5s , increasing Arcane Damage by 5% per stack (Max 50 stacks)."
+        }
+      ]
+    },
+    "monk": {
+      "sourceUrl": "https://afkmeta.com/en/deskrawl/talents/monk",
+      "title": "Deskrawl Monk Talent Planner: Combat Talents & Life Skills | AFK Meta",
+      "talents": [
+        {
+          "index": 1,
+          "name": "Dexterity",
+          "pointsSpent": 0,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "+ 50 Dexterity"
+        },
+        {
+          "index": 2,
+          "name": "Dodge Chance",
+          "pointsSpent": 0,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 12% Dodge Chance"
+        },
+        {
+          "index": 3,
+          "name": "Movement Speed",
+          "pointsSpent": 5,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "+ 25% Movement Speed"
+        },
+        {
+          "index": 4,
+          "name": "Vitality",
+          "pointsSpent": 0,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 600 Max HP"
+        },
+        {
+          "index": 5,
+          "name": "Max Mana",
+          "pointsSpent": 0,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "+ 30 Max Mana"
+        },
+        {
+          "index": 6,
+          "name": "Attack Speed",
+          "pointsSpent": 5,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "+ 24% Attack Speed"
+        },
+        {
+          "index": 7,
+          "name": "Physical Damage",
+          "pointsSpent": 0,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "+ 80% Physical Damage"
+        },
+        {
+          "index": 8,
+          "name": "Healing & Magic Resist",
+          "pointsSpent": 5,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 40% Healing Received and + 320 Magic Resist"
+        },
+        {
+          "index": 9,
+          "name": "Mana On Kill",
+          "pointsSpent": 5,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "+ 10 Mana On Kill"
+        },
+        {
+          "index": 10,
+          "name": "Sweeping Discipline",
+          "pointsSpent": 40,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "+ 100% Damage to [AOE] abilities Affects: Seismic Strike, Piercing Lunge, Golden Palms, Divine Thunder"
+        },
+        {
+          "index": 11,
+          "name": "Enhance Lightning Abilities: Critical Hit Chance",
+          "pointsSpent": 15,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 20% Critical Hit Chance to [Lightning] Abilities Affects: Sacred Judgment, Sacred Orbs, Divine Thunder"
+        },
+        {
+          "index": 12,
+          "name": "Lightning Damage",
+          "pointsSpent": 5,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "+ 80% Lightning Damage"
+        },
+        {
+          "index": 13,
+          "name": "Chain Force",
+          "pointsSpent": 10,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Every — casts of Basic Attack, that attack deals 100% more direct damage."
+        },
+        {
+          "index": 14,
+          "name": "Aftershock",
+          "pointsSpent": 40,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "The third strike from Seismic Strike has a 80% chance to inflict [Dazed] status"
+        },
+        {
+          "index": 15,
+          "name": "Illumination",
+          "pointsSpent": 10,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Critical Hit from [Lightning] abilities will have 30% chance to trigger your Mana On Kill"
+        },
+        {
+          "index": 16,
+          "name": "Thunderclap",
+          "pointsSpent": 15,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "Sacred Judgment's shockwave has a 75% chance to stun the enemies it strikes"
+        },
+        {
+          "index": 17,
+          "name": "Cyclone Repulse",
+          "pointsSpent": 50,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "Whirlwind Staff hits knock enemies back 0.5 meters."
+        },
+        {
+          "index": 18,
+          "name": "Enhance Threefold Strike: Critical Damage",
+          "pointsSpent": 20,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 160% Critical Damage to Threefold Strike Affects: Threefold Strike"
+        },
+        {
+          "index": 19,
+          "name": "Zephyr's Flow",
+          "pointsSpent": 15,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "Each Dodge will generate 10 Mana"
+        },
+        {
+          "index": 20,
+          "name": "Exploit Weakness",
+          "pointsSpent": 50,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "+ 150% Damage to [Dazed] enemies."
+        },
+        {
+          "index": 21,
+          "name": "Sheltering Breath",
+          "pointsSpent": 20,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "Casting Spirit Stream reduces damage taken by — for — ."
+        },
+        {
+          "index": 22,
+          "name": "Enhance Piercing Lunge: Damage",
+          "pointsSpent": 20,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 160% Damage to Piercing Lunge Affects: Piercing Lunge"
+        },
+        {
+          "index": 23,
+          "name": "Enhance Sacred Orbs: Speed",
+          "pointsSpent": 15,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "+ 200% rotation speed to Sacred Orbs"
+        },
+        {
+          "index": 24,
+          "name": "Gathered Force",
+          "pointsSpent": 30,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Every — Basic Attack casts store one charge. Each Strong Attack spends one charge to deal 30% more damage. Charges accumulate."
+        },
+        {
+          "index": 25,
+          "name": "Heavy Hands",
+          "pointsSpent": 20,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "+ 100% Critical Damage to [Strong Attack] abilities Affects: Sacred Judgment, Piercing Lunge, Whirlwind Staff, Golden Palms"
+        },
+        {
+          "index": 26,
+          "name": "Slipstream",
+          "pointsSpent": 40,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "Charge grants + 30% Dodge Chance for 4s"
+        },
+        {
+          "index": 27,
+          "name": "Enhance Spirit Twin: Duration",
+          "pointsSpent": 40,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "Spirit Twin lingers 30% longer Affects: Spirit Twin"
+        },
+        {
+          "index": 28,
+          "name": "Vigor",
+          "pointsSpent": 15,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "+ 20% Critical Hit Chance to [Physical] Abilities Affects: Threefold Strike, Furious Fist, Seismic Strike, Chi Bolt, Piercing Lunge, Whirlwind Staff, Golden Palms, Charge"
+        },
+        {
+          "index": 29,
+          "name": "Fundamentals",
+          "pointsSpent": 20,
+          "maxPoints": 10,
+          "requires": "—",
+          "atMax": "+ 100% Damage to [Basic Attack] Abilities Affects: Threefold Strike, Furious Fist, Seismic Strike, Chi Bolt"
+        },
+        {
+          "index": 30,
+          "name": "Enhance Golden Palms: Damage & Mana Cost",
+          "pointsSpent": 50,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "Golden Palms costs -40% less Mana and deals + 80% Damage Affects: Golden Palms"
+        },
+        {
+          "index": 31,
+          "name": "Formless",
+          "pointsSpent": 60,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Gain bonus Critical Damage equal to 200% of your Dodge Chance."
+        },
+        {
+          "index": 32,
+          "name": "Enhance Chi Bolt: Healing",
+          "pointsSpent": 50,
+          "maxPoints": 6,
+          "requires": "—",
+          "atMax": "Chi Bolt's third bolt restores an additional 24% of your Max Health Affects: Chi Bolt"
+        },
+        {
+          "index": 33,
+          "name": "Enhance Divine Thunder: Damage",
+          "pointsSpent": 50,
+          "maxPoints": 5,
+          "requires": "—",
+          "atMax": "+ 200% Damage to Divine Thunder Affects: Divine Thunder"
+        },
+        {
+          "index": 34,
+          "name": "Shared Chi",
+          "pointsSpent": 30,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Casting a different [Chi] ability from your previous [Chi] ability restores 8% of Max Mana. The first cast restores no mana."
+        },
+        {
+          "index": 35,
+          "name": "Charged Orb",
+          "pointsSpent": 40,
+          "maxPoints": 8,
+          "requires": "—",
+          "atMax": "Sacred Orbs hits have a 80% chance to apply 1 stack of [Electrostatic] ."
+        },
+        {
+          "index": 36,
+          "name": "Thundering",
+          "pointsSpent": 60,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "A [Lightning] hit on an enemy with 5 stacks of [Electrostatic] consumes them, calling down a lightning strike for 250% weapon damage as Lightning damage"
+        },
+        {
+          "index": 37,
+          "name": "Mirror Steps",
+          "pointsSpent": 10,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "After dodging, gain + — Physical Damage for —"
+        },
+        {
+          "index": 38,
+          "name": "Iron Constitution",
+          "pointsSpent": 60,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "A lethal blow restores you to full health and reduces damage taken by — for — . Cooldown: 30s ."
+        },
+        {
+          "index": 39,
+          "name": "Chi Ward",
+          "pointsSpent": 30,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "Restore 15 Health for each Mana spent."
+        },
+        {
+          "index": 40,
+          "name": "Chi Expenditure",
+          "pointsSpent": 60,
+          "maxPoints": 1,
+          "requires": "—",
+          "atMax": "After casting a Strong Attack, spend all remaining Mana. Each extra Mana spent increases that attack’s direct damage by 1% ."
+        }
+      ]
+    }
+  },
+  "lifeSkills": [
+    {
+      "index": 1,
+      "name": "Auto Recovery",
+      "requires": "—",
+      "gold": "50",
+      "effects": "Automatically recover to full health when returning to town."
+    },
+    {
+      "index": 2,
+      "name": "Gold Find I",
+      "requires": "Auto Recovery",
+      "gold": "150",
+      "effects": "Increase Gold Find by 10%"
+    },
+    {
+      "index": 3,
+      "name": "Item Find I",
+      "requires": "Auto Recovery",
+      "gold": "150",
+      "effects": "Increase Item Find by 10%"
+    },
+    {
+      "index": 4,
+      "name": "Revive Cooldown Reduction I",
+      "requires": "Auto Recovery",
+      "gold": "150",
+      "effects": "Decrease Auto Revive cooldown by — ."
+    },
+    {
+      "index": 5,
+      "name": "XP Gain I",
+      "requires": "Auto Recovery",
+      "gold": "150",
+      "effects": "Increase XP Gain by 10%"
+    },
+    {
+      "index": 6,
+      "name": "Expedition Camp",
+      "requires": "XP Gain I",
+      "gold": "750",
+      "effects": "Your character keeps hunting while you are away. Gold and experience accumulate based on the highest area you have unlocked, and are collected the next time you enter town."
+    },
+    {
+      "index": 7,
+      "name": "Capacity I",
+      "requires": "XP Gain I",
+      "gold": "500",
+      "effects": "Increase Carriage Capacity by 1"
+    },
+    {
+      "index": 8,
+      "name": "Capacity I",
+      "requires": "Item Find I",
+      "gold": "500",
+      "effects": "Increase Carriage Capacity by 1"
+    },
+    {
+      "index": 9,
+      "name": "Soul Reliquary I",
+      "requires": "Item Find I",
+      "gold": "1,000",
+      "effects": "Increase Soul Shard carry limit by — ."
+    },
+    {
+      "index": 10,
+      "name": "Equipment Auto-Sell",
+      "requires": "Gold Find I",
+      "gold": "1,500",
+      "effects": "During combat, automatically sells equipment of the selected rarities the moment the carriage picks it up. Sold equipment does not take up carriage space."
+    },
+    {
+      "index": 11,
+      "name": "Gold Find I",
+      "requires": "Gold Find I",
+      "gold": "5,000",
+      "effects": "Increase Gold Find by 10%"
+    },
+    {
+      "index": 12,
+      "name": "Auto Refill",
+      "requires": "Revive Cooldown Reduction I",
+      "gold": "500",
+      "effects": "Automatically refill potion charges after returning to town or being revived from death."
+    },
+    {
+      "index": 13,
+      "name": "Combat Potion Auto-Use Slot",
+      "requires": "Revive Cooldown Reduction I",
+      "gold": "2,500",
+      "effects": "Unlock a slot for a combat potion, which is used automatically during combat whenever its buff is not active."
+    },
+    {
+      "index": 14,
+      "name": "Storage Page",
+      "requires": "Capacity I",
+      "gold": "20,000",
+      "effects": "Unlock an additional storage page."
+    },
+    {
+      "index": 15,
+      "name": "Material Find I",
+      "requires": "Expedition Camp",
+      "gold": "6,000",
+      "effects": "Increase material gathered from resource nodes by 16%"
+    },
+    {
+      "index": 16,
+      "name": "Item Find I",
+      "requires": "Expedition Camp",
+      "gold": "6,000",
+      "effects": "Increase Item Find by 10%"
+    },
+    {
+      "index": 17,
+      "name": "Gold Find I",
+      "requires": "Expedition Camp",
+      "gold": "6,000",
+      "effects": "Increase Gold Find by 10%"
+    },
+    {
+      "index": 18,
+      "name": "Potion Find II",
+      "requires": "Storage Page",
+      "gold": "30,000",
+      "effects": "Increase Potion Find by 10%"
+    },
+    {
+      "index": 19,
+      "name": "Potion Find I",
+      "requires": "Storage Page",
+      "gold": "20,000",
+      "effects": "Increase Potion Find by 3%"
+    },
+    {
+      "index": 20,
+      "name": "Item Find I",
+      "requires": "Storage Page",
+      "gold": "20,000",
+      "effects": "Increase Item Find by 10%"
+    },
+    {
+      "index": 21,
+      "name": "Gold Find I",
+      "requires": "Combat Potion Auto-Use Slot",
+      "gold": "6,000",
+      "effects": "Increase Gold Find by 10%"
+    },
+    {
+      "index": 22,
+      "name": "Material Find I",
+      "requires": "Combat Potion Auto-Use Slot",
+      "gold": "6,000",
+      "effects": "Increase material gathered from resource nodes by 16%"
+    },
+    {
+      "index": 23,
+      "name": "Capacity I",
+      "requires": "Combat Potion Auto-Use Slot",
+      "gold": "6,000",
+      "effects": "Increase Carriage Capacity by 1"
+    },
+    {
+      "index": 24,
+      "name": "Potion Find I",
+      "requires": "Auto Refill",
+      "gold": "6,000",
+      "effects": "Increase Potion Find by 3%"
+    },
+    {
+      "index": 25,
+      "name": "Item Find I",
+      "requires": "Auto Refill",
+      "gold": "6,000",
+      "effects": "Increase Item Find by 10%"
+    },
+    {
+      "index": 26,
+      "name": "Revive Cooldown Reduction I",
+      "requires": "Auto Refill",
+      "gold": "6,000",
+      "effects": "Decrease Auto Revive cooldown by — ."
+    },
+    {
+      "index": 27,
+      "name": "Item Find II",
+      "requires": "Capacity I",
+      "gold": "20,000",
+      "effects": "Increase Item Find by 20%"
+    },
+    {
+      "index": 28,
+      "name": "Gold Find I",
+      "requires": "Capacity I",
+      "gold": "6,000",
+      "effects": "Increase Gold Find by 10%"
+    },
+    {
+      "index": 29,
+      "name": "XP Gain I",
+      "requires": "Capacity I",
+      "gold": "6,000",
+      "effects": "Increase XP Gain by 10%"
+    },
+    {
+      "index": 30,
+      "name": "Angler's Instinct I",
+      "requires": "Soul Reliquary I",
+      "gold": "5,000",
+      "effects": "Increase fishing success rate by — ."
+    },
+    {
+      "index": 31,
+      "name": "Swift Cast I",
+      "requires": "Soul Reliquary I",
+      "gold": "5,000",
+      "effects": "Reduce the time each fishing cast takes by — ."
+    },
+    {
+      "index": 32,
+      "name": "Soul Reliquary II",
+      "requires": "Soul Reliquary I",
+      "gold": "6,000",
+      "effects": "Increase Soul Shard carry limit by — ."
+    },
+    {
+      "index": 33,
+      "name": "Material Find I",
+      "requires": "Gold Find I",
+      "gold": "6,000",
+      "effects": "Increase material gathered from resource nodes by 16%"
+    },
+    {
+      "index": 34,
+      "name": "Expedition Supplies I",
+      "requires": "Gold Find I",
+      "gold": "20,000",
+      "effects": "Increase the offline reward time limit by — hours."
+    },
+    {
+      "index": 35,
+      "name": "XP Gain I",
+      "requires": "Gold Find I",
+      "gold": "6,000",
+      "effects": "Increase XP Gain by 10%"
+    },
+    {
+      "index": 36,
+      "name": "Auto-Fill Inventory",
+      "requires": "Equipment Auto-Sell",
+      "gold": "6,000",
+      "effects": "When the Carriage is full, newly collected loot is sent to your inventory when space is available."
+    },
+    {
+      "index": 37,
+      "name": "Item Find I",
+      "requires": "Equipment Auto-Sell",
+      "gold": "6,000",
+      "effects": "Increase Item Find by 10%"
+    },
+    {
+      "index": 38,
+      "name": "Capacity I",
+      "requires": "Equipment Auto-Sell",
+      "gold": "6,000",
+      "effects": "Increase Carriage Capacity by 1"
+    },
+    {
+      "index": 39,
+      "name": "Capacity I",
+      "requires": "Capacity I",
+      "gold": "8,000",
+      "effects": "Increase Carriage Capacity by 1"
+    },
+    {
+      "index": 40,
+      "name": "Potion Find II",
+      "requires": "Item Find I",
+      "gold": "8,000",
+      "effects": "Increase Potion Find by 10%"
+    },
+    {
+      "index": 41,
+      "name": "Gold Find I",
+      "requires": "Auto-Fill Inventory",
+      "gold": "8,000",
+      "effects": "Increase Gold Find by 10%"
+    },
+    {
+      "index": 42,
+      "name": "XP Gain I",
+      "requires": "XP Gain I",
+      "gold": "8,000",
+      "effects": "Increase XP Gain by 10%"
+    },
+    {
+      "index": 43,
+      "name": "Expedition Supplies I",
+      "requires": "Expedition Supplies I",
+      "gold": "35,000",
+      "effects": "Increase the offline reward time limit by — hours."
+    },
+    {
+      "index": 44,
+      "name": "Material Find II",
+      "requires": "Material Find I",
+      "gold": "8,000",
+      "effects": "Increase material gathered from resource nodes by 30%"
+    },
+    {
+      "index": 45,
+      "name": "Soul Reliquary III",
+      "requires": "Soul Reliquary II",
+      "gold": "8,000",
+      "effects": "Increase Soul Shard carry limit by — ."
+    },
+    {
+      "index": 46,
+      "name": "Swift Cast II",
+      "requires": "Swift Cast I",
+      "gold": "8,000",
+      "effects": "Reduce the time each fishing cast takes by — ."
+    },
+    {
+      "index": 47,
+      "name": "Angler's Instinct II",
+      "requires": "Angler's Instinct I",
+      "gold": "8,000",
+      "effects": "Increase fishing success rate by — ."
+    },
+    {
+      "index": 48,
+      "name": "Capacity I",
+      "requires": "Item Find II",
+      "gold": "20,000",
+      "effects": "Increase Carriage Capacity by 1"
+    },
+    {
+      "index": 49,
+      "name": "Gold Find II",
+      "requires": "Gold Find I",
+      "gold": "8,000",
+      "effects": "Increase Gold Find by 15%"
+    },
+    {
+      "index": 50,
+      "name": "XP Gain I",
+      "requires": "XP Gain I",
+      "gold": "8,000",
+      "effects": "Increase XP Gain by 10%"
+    },
+    {
+      "index": 51,
+      "name": "Revive Cooldown Reduction II",
+      "requires": "Revive Cooldown Reduction I",
+      "gold": "8,000",
+      "effects": "Decrease Auto Revive cooldown by — ."
+    },
+    {
+      "index": 52,
+      "name": "XP Gain I",
+      "requires": "Item Find I",
+      "gold": "8,000",
+      "effects": "Increase XP Gain by 10%"
+    },
+    {
+      "index": 53,
+      "name": "Potion Find I",
+      "requires": "Potion Find I",
+      "gold": "8,000",
+      "effects": "Increase Potion Find by 3%"
+    },
+    {
+      "index": 54,
+      "name": "Material Find II",
+      "requires": "Material Find I",
+      "gold": "8,000",
+      "effects": "Increase material gathered from resource nodes by 30%"
+    },
+    {
+      "index": 55,
+      "name": "Capacity II",
+      "requires": "Capacity I",
+      "gold": "8,000",
+      "effects": "Increase Carriage Capacity by 2"
+    },
+    {
+      "index": 56,
+      "name": "Material Find I",
+      "requires": "Gold Find I",
+      "gold": "8,000",
+      "effects": "Increase material gathered from resource nodes by 16%"
+    },
+    {
+      "index": 57,
+      "name": "Revive Cooldown Reduction I",
+      "requires": "Item Find I",
+      "gold": "25,000",
+      "effects": "Decrease Auto Revive cooldown by — ."
+    },
+    {
+      "index": 58,
+      "name": "Potion Find I",
+      "requires": "Potion Find I",
+      "gold": "25,000",
+      "effects": "Increase Potion Find by 3%"
+    },
+    {
+      "index": 59,
+      "name": "Equipment Auto-Salvage",
+      "requires": "Capacity I",
+      "gold": "35,000",
+      "effects": "During combat, automatically breaks equipment of the selected rarities down into crafting materials the moment the carriage picks it up. Salvaged equipment does not take up carriage space."
+    },
+    {
+      "index": 60,
+      "name": "Gold Find II",
+      "requires": "Gold Find I",
+      "gold": "8,000",
+      "effects": "Increase Gold Find by 15%"
+    },
+    {
+      "index": 61,
+      "name": "Material Find I",
+      "requires": "Material Find I",
+      "gold": "8,000",
+      "effects": "Increase material gathered from resource nodes by 16%"
+    },
+    {
+      "index": 62,
+      "name": "Item Find I",
+      "requires": "Item Find I",
+      "gold": "8,000",
+      "effects": "Increase Item Find by 10%"
+    },
+    {
+      "index": 63,
+      "name": "Material Find II",
+      "requires": "Potion Find II",
+      "gold": "15,000",
+      "effects": "Increase material gathered from resource nodes by 30%"
+    },
+    {
+      "index": 64,
+      "name": "Gold Find II",
+      "requires": "Gold Find I",
+      "gold": "15,000",
+      "effects": "Increase Gold Find by 15%"
+    },
+    {
+      "index": 65,
+      "name": "XP Gain II",
+      "requires": "XP Gain I",
+      "gold": "15,000",
+      "effects": "Increase XP Gain by 15%"
+    },
+    {
+      "index": 66,
+      "name": "Expedition Supplies II",
+      "requires": "Expedition Supplies I",
+      "gold": "50,000",
+      "effects": "Increase the offline reward time limit by — hours."
+    },
+    {
+      "index": 67,
+      "name": "Soul Reliquary IV",
+      "requires": "Soul Reliquary III",
+      "gold": "15,000",
+      "effects": "Increase Soul Shard carry limit by — ."
+    },
+    {
+      "index": 68,
+      "name": "Swift Cast III",
+      "requires": "Swift Cast II",
+      "gold": "15,000",
+      "effects": "Reduce the time each fishing cast takes by — ."
+    },
+    {
+      "index": 69,
+      "name": "Capacity II",
+      "requires": "Capacity I",
+      "gold": "25,000",
+      "effects": "Increase Carriage Capacity by 2"
+    },
+    {
+      "index": 70,
+      "name": "XP Gain II",
+      "requires": "XP Gain I",
+      "gold": "15,000",
+      "effects": "Increase XP Gain by 15%"
+    },
+    {
+      "index": 71,
+      "name": "XP Gain II",
+      "requires": "XP Gain I",
+      "gold": "15,000",
+      "effects": "Increase XP Gain by 15%"
+    },
+    {
+      "index": 72,
+      "name": "Potion Find II",
+      "requires": "Material Find II",
+      "gold": "15,000",
+      "effects": "Increase Potion Find by 10%"
+    },
+    {
+      "index": 73,
+      "name": "Gold Find II",
+      "requires": "Material Find I",
+      "gold": "15,000",
+      "effects": "Increase Gold Find by 15%"
+    },
+    {
+      "index": 74,
+      "name": "Storage Page",
+      "requires": "Revive Cooldown Reduction I",
+      "gold": "100,000",
+      "effects": "Unlock an additional storage page."
+    },
+    {
+      "index": 75,
+      "name": "Material Find II",
+      "requires": "Material Find I",
+      "gold": "15,000",
+      "effects": "Increase material gathered from resource nodes by 30%"
+    },
+    {
+      "index": 76,
+      "name": "Item Find II",
+      "requires": "Item Find I",
+      "gold": "15,000",
+      "effects": "Increase Item Find by 20%"
+    },
+    {
+      "index": 77,
+      "name": "Storage Page",
+      "requires": "Angler's Instinct II",
+      "gold": "54,000",
+      "effects": "Unlock an additional storage page."
+    },
+    {
+      "index": 78,
+      "name": "XP Gain II",
+      "requires": "Potion Find I",
+      "gold": "100,000",
+      "effects": "Increase XP Gain by 15%"
+    },
+    {
+      "index": 79,
+      "name": "Utility Potion Auto-Use Slot",
+      "requires": "Potion Find I",
+      "gold": "25,000",
+      "effects": "Unlock a slot for a utility potion, which is used automatically during combat whenever its buff is not active."
+    },
+    {
+      "index": 80,
+      "name": "Food Auto-Use Slot",
+      "requires": "Utility Potion Auto-Use Slot",
+      "gold": "100,000",
+      "effects": "Unlock a slot for a food, which is used automatically during combat whenever its buff is not active."
+    },
+    {
+      "index": 81,
+      "name": "XP Gain II",
+      "requires": "Food Auto-Use Slot",
+      "gold": "150,000",
+      "effects": "Increase XP Gain by 15%"
+    },
+    {
+      "index": 82,
+      "name": "Gold Find II",
+      "requires": "Food Auto-Use Slot",
+      "gold": "150,000",
+      "effects": "Increase Gold Find by 15%"
+    },
+    {
+      "index": 83,
+      "name": "Capacity II",
+      "requires": "Food Auto-Use Slot",
+      "gold": "150,000",
+      "effects": "Increase Carriage Capacity by 2"
+    },
+    {
+      "index": 84,
+      "name": "XP Gain II",
+      "requires": "Storage Page",
+      "gold": "150,000",
+      "effects": "Increase XP Gain by 15%"
+    },
+    {
+      "index": 85,
+      "name": "Gold Find II",
+      "requires": "XP Gain II",
+      "gold": "150,000",
+      "effects": "Increase Gold Find by 15%"
+    }
+  ]
+}
