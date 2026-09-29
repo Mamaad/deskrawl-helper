@@ -1,8 +1,38 @@
 # Deskrawl Helper
 
-Community toolkit for **Deskrawl: Idle ARPG**: build sharing, a theorycraft planner and local-first `game.log` analysis.
+Unofficial community toolkit for **Deskrawl: Idle ARPG**.
 
-> Any unverified game content is explicitly marked as demo/placeholder data. The project does not present invented skills, items, talents, formulas or builds as real Deskrawl data.
+The project is deliberately provenance-first: game-data facts, demo snapshots, measured observations and community theory are not silently mixed together.
+
+## Current features
+
+- Gaming-oriented Next.js interface rather than a generic SaaS landing page
+- 10 UI locales: English, French, German, Spanish, Simplified Chinese, Japanese, Korean, Polish, Brazilian Portuguese and Russian
+- Local-first `game.log` tracker: the selected file is parsed in the browser and is not uploaded by default
+- Player-facing instructions for locating a `game.log` without pretending there is a verified universal path
+- Versioned Deskrawl data layer with source URLs and snapshot dates
+- Warrior demo talent tree imported from the indexed AFK Meta snapshot
+- Launch-level sanity counts kept separately from the older demo dataset
+- Community build archive, build editor scaffold and generic calculator sandbox
+- PostgreSQL/Prisma schema for users, builds, skills, talents, equipment, runes, votes and comments
+
+> Unverified game content is always marked as demo, generic, community or unknown. The project does not invent Deskrawl skills, items, formulas or log metrics.
+
+## Data provenance
+
+### AFK Meta
+
+AFK Meta's published methodology states that its game references are built from data tables shipped with the game client, with decoded columns cross-checked against tooltips, screenshots and measured runs. Deskrawl Helper links to the original source and keeps the snapshot date attached to imported facts.
+
+The publicly indexed Deskrawl Warrior talent snapshot used here is dated **2026-09-27** and represents the pre-launch/demo state. It must not be silently mixed with release class trees.
+
+### Launch reference
+
+A release-level reference indexed on **2026-09-29** reports four heroes, 56 abilities, 161 talents, 209 equipment pieces, 67 minions and 62 enemies. These totals are used as release sanity checks while exact rows await a directly inspectable/versioned export.
+
+### Files
+
+SteamDB's Cloud Save configuration confirms `Deskrawl/Data/save.json` under the Steam install directory. That is a save-file location; it is not treated as proof of a universal `game.log` path.
 
 ## Stack
 
@@ -39,53 +69,40 @@ npm run test
 npm run build
 ```
 
-## Architecture
+## Main routes
 
-- `src/app` — pages and Route Handlers
-- `src/components` — build, planner and log-analyzer UI
-- `src/lib/deskrawl-log-parser` — browser-safe parsing
-- `src/lib/calculator` — isolated calculation engine
-- `src/lib/validators` — Zod validation
-- `src/lib/db` — Prisma client
-- `prisma/schema.prisma` — PostgreSQL schema
-- `prisma/seed.ts` — clearly marked demo seed data
-
-## MVP routes
-
-- `/`
-- `/builds`
-- `/builds/[slug]`
-- `/builds/new`
-- `/planner`
-- `/tools/log-analyzer`
-- `GET/POST /api/builds`
-- `GET/PATCH/DELETE /api/builds/[slug]`
-- `POST /api/builds/[slug]/vote`
-- `POST /api/builds/[slug]/comments`
-
-The mutation endpoints intentionally return `501` until authentication and persistence are wired, rather than pretending writes succeeded.
+- `/` — terminal/home
+- `/tracker` — local `game.log` analyzer + file-finding guide
+- `/talents` — versioned Talent Lab
+- `/sources` — methodology and provenance
+- `/builds` and `/builds/[slug]` — community archive scaffold
+- `/builds/new` — build editor scaffold
+- `/planner` — theorycraft sandbox
+- `/tools/log-analyzer` — legacy redirect to `/tracker`
 
 ## game.log safety
 
-The analyzer reads a selected file directly in the browser, enforces a 5 MB UI limit and treats every line as untrusted text. It never evaluates log contents as code. Exact Deskrawl event parsing must be based on real log samples.
+The tracker:
+- reads a selected file locally in the browser;
+- applies a 10 MB UI limit;
+- treats every line as untrusted text;
+- never evaluates log contents as code;
+- keeps unknown lines visible;
+- does not label inferred values as real DPS/drop statistics.
+
+Exact Deskrawl event parsing should be expanded from real log samples.
 
 ## Deploy on Vercel + Neon
 
 1. Import `Mamaad/deskrawl-helper` into Vercel.
-2. Add a Neon PostgreSQL integration/database from the Vercel Marketplace.
-3. Expose `DATABASE_URL` to the project.
-4. Create the first Prisma migration against the configured database and commit `prisma/migrations`.
-5. Use `npx prisma migrate deploy` in the controlled deployment workflow.
-6. Deploy; Vercel uses `npm run build`.
+2. Attach a Neon PostgreSQL database.
+3. Expose `DATABASE_URL`.
+4. Create and commit the initial Prisma migration.
+5. Deploy from `main`.
 
-## Authentication
+## Next data work
 
-The schema already supports users, votes and comments. Discord OAuth is intentionally deferred until provider credentials exist. Auth.js can be added without changing the data model.
-
-## Next steps
-
-1. Add real Deskrawl `game.log` samples and document event formats.
-2. Import verified skills, talents, items and runes with game-version provenance.
-3. Wire authenticated mutations to Prisma.
-4. Add Discord OAuth.
-5. Replace demo lists with database queries, filters, votes and comments.
+1. Obtain a current release `game.log` sample and formalize its event grammar.
+2. Import release class talent rows from a directly inspectable client-data export or equivalently verifiable source.
+3. Import versioned ability/equipment/rune datasets.
+4. Wire authenticated build publishing, voting, comments and Discord OAuth.

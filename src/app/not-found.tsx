@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound(){return <section className="game-card" style={{maxWidth:760,margin:"80px auto"}}><div className="eyebrow">404 // LOST SECTOR</div><h1 className="page-title" style={{fontSize:"clamp(44px,7vw,76px)"}}>Nothing crawls here.</h1><p className="lead">This route or build does not exist in the current archive.</p><Link href="/" className="game-btn primary">Return to terminal</Link></section>}
