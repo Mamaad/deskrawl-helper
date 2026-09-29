@@ -3,7 +3,7 @@
 import {useState} from "react";
 import {useI18n} from "@/components/i18n-provider";
 
-const windowsRunCommand = String.raw\`powershell -NoProfile -Command "$f=Get-ChildItem (Join-Path $env:USERPROFILE 'AppData\LocalLow') -Filter game.log -Recurse -File -ErrorAction SilentlyContinue | Where-Object { $_.FullName -match 'Deskrawl' } | Select-Object -First 1; if ($f) { Start-Process explorer.exe $f.Directory.FullName }"\`;
+const windowsRunCommand = "powershell -NoProfile -Command \"$f=Get-ChildItem (Join-Path $env:USERPROFILE 'AppData\\\\LocalLow') -Filter game.log -Recurse -File -ErrorAction SilentlyContinue | Where-Object { $_.FullName -match 'Deskrawl' } | Select-Object -First 1; if ($f) { Start-Process explorer.exe $f.Directory.FullName }\"";
 
 const copy:Record<string,{eyebrow:string;title:string;open:string;paste:string;enter:string;copy:string;copied:string;note:string}> = {
   en:{eyebrow:"WINDOWS · QUICK OPEN",title:"Find game.log with Win + R",open:"Open Windows Run",paste:"Paste the command",enter:"Explorer opens the log folder",copy:"COPY COMMAND",copied:"COPIED",note:"This command searches your Windows LocalLow folder for game.log inside a Deskrawl path, then opens its folder in Explorer. It does not upload, edit or execute the log."},
