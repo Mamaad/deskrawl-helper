@@ -1,0 +1,3 @@
+import Link from "next/link";
+import type {Build} from "@/types/build";
+export function BuildCard({build}:{build:Build}){return <article className="card"><div style={{display:"flex",justifyContent:"space-between",gap:12}}><span className="badge">{build.className}</span><span style={{color:"#a5b4fc"}}>▲ {build.votes}</span></div><h3 style={{fontSize:20,marginBottom:8}}><Link href={"/builds/"+build.slug}>{build.title}</Link></h3><p style={{color:"#8e9ab3"}}>{build.description}</p><div style={{display:"flex",justifyContent:"space-between",fontSize:13,color:"#8e9ab3"}}><span>{build.author}</span><span>Patch {build.gameVersion}</span></div>{build.demo&&<p style={{fontSize:12,color:"#fbbf24"}}>Demo data — not a verified Deskrawl build.</p>}</article>}

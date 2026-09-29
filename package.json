@@ -1,0 +1,6 @@
+{
+  "name":"deskrawl-helper","version":"0.1.0","private":true,
+  "scripts":{"dev":"next dev","build":"prisma generate && next build","start":"next start","lint":"eslint .","typecheck":"tsc --noEmit","test":"vitest run"},
+  "dependencies":{"@prisma/client":"^6.16.2","next":"^15.5.4","react":"^19.1.1","react-dom":"^19.1.1","zod":"^4.1.11"},
+  "devDependencies":{"@eslint/eslintrc":"^3.3.1","@tailwindcss/postcss":"^4.1.14","@types/node":"^24.6.0","@types/react":"^19.1.16","@types/react-dom":"^19.1.9","eslint":"^9.36.0","eslint-config-next":"^15.5.4","prisma":"^6.16.2","tailwindcss":"^4.1.14","typescript":"^5.9.2","vitest":"^3.2.4"}
+}

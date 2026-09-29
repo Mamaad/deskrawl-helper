@@ -1,0 +1,176 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum DeskrawlClass {
+  SORCERER
+  WARRIOR
+  MONK
+  HUNTER
+}
+
+model User {
+  id          String    @id @default(cuid())
+  username    String    @unique
+  displayName String?
+  avatarUrl   String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  builds      Build[]
+  votes       Vote[]
+  comments    Comment[]
+}
+
+model Build {
+  id          String        @id @default(cuid())
+  slug        String        @unique
+  title       String
+  description String        @db.Text
+  class       DeskrawlClass
+  gameVersion String
+  authorId    String?
+  author      User?         @relation(fields: [authorId], references: [id], onDelete: SetNull)
+  isPublic    Boolean       @default(true)
+  isDemo      Boolean       @default(false)
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  skills      BuildSkill[]
+  talents     BuildTalent[]
+  items       BuildItem[]
+  runes       BuildRune[]
+  votes       Vote[]
+  comments    Comment[]
+
+  @@index([class, gameVersion])
+  @@index([createdAt])
+}
+
+model GameClass {
+  id      String        @id @default(cuid())
+  key     DeskrawlClass @unique
+  name    String
+  skills  Skill[]
+  talents Talent[]
+}
+
+model Skill {
+  id        String       @id @default(cuid())
+  slug      String       @unique
+  name      String
+  classId   String
+  gameClass GameClass    @relation(fields: [classId], references: [id], onDelete: Cascade)
+  builds    BuildSkill[]
+
+  @@index([classId])
+}
+
+model Talent {
+  id        String        @id @default(cuid())
+  slug      String        @unique
+  name      String
+  classId   String
+  gameClass GameClass     @relation(fields: [classId], references: [id], onDelete: Cascade)
+  builds    BuildTalent[]
+
+  @@index([classId])
+}
+
+model Item {
+  id     String      @id @default(cuid())
+  slug   String      @unique
+  name   String
+  slot   String?
+  builds BuildItem[]
+}
+
+model Rune {
+  id     String      @id @default(cuid())
+  slug   String      @unique
+  name   String
+  builds BuildRune[]
+}
+
+model BuildSkill {
+  id            String @id @default(cuid())
+  buildId       String
+  skillId       String
+  slot          Int?
+  configuration Json?
+  build         Build  @relation(fields: [buildId], references: [id], onDelete: Cascade)
+  skill         Skill  @relation(fields: [skillId], references: [id], onDelete: Cascade)
+
+  @@unique([buildId, skillId, slot])
+}
+
+model BuildTalent {
+  id       String @id @default(cuid())
+  buildId  String
+  talentId String
+  points   Int    @default(1)
+  build    Build  @relation(fields: [buildId], references: [id], onDelete: Cascade)
+  talent   Talent @relation(fields: [talentId], references: [id], onDelete: Cascade)
+
+  @@unique([buildId, talentId])
+}
+
+model BuildItem {
+  id            String @id @default(cuid())
+  buildId       String
+  itemId        String
+  slot          String
+  configuration Json?
+  build         Build  @relation(fields: [buildId], references: [id], onDelete: Cascade)
+  item          Item   @relation(fields: [itemId], references: [id], onDelete: Cascade)
+
+  @@unique([buildId, slot])
+}
+
+model BuildRune {
+  id      String @id @default(cuid())
+  buildId String
+  runeId  String
+  slot    String?
+  build   Build  @relation(fields: [buildId], references: [id], onDelete: Cascade)
+  rune    Rune   @relation(fields: [runeId], references: [id], onDelete: Cascade)
+
+  @@index([buildId])
+}
+
+model Vote {
+  id        String   @id @default(cuid())
+  userId    String
+  buildId   String
+  value     Int
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  build     Build    @relation(fields: [buildId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, buildId])
+  @@index([buildId])
+}
+
+model Comment {
+  id        String   @id @default(cuid())
+  userId    String
+  buildId   String
+  content   String   @db.VarChar(2000)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  build     Build    @relation(fields: [buildId], references: [id], onDelete: Cascade)
+
+  @@index([buildId, createdAt])
+}
+
+model GamePatch {
+  id         String    @id @default(cuid())
+  version    String    @unique
+  releasedAt DateTime?
+  notes      String?   @db.Text
+  createdAt  DateTime  @default(now())
+}

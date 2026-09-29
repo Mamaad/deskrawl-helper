@@ -1,0 +1,2 @@
+export type CombatInputs={baseDamage:number;increasedDamagePct:number;critChancePct:number;critDamagePct:number};
+export function estimateHit({baseDamage,increasedDamagePct,critChancePct,critDamagePct}:CombatInputs){const normal=baseDamage*(1+increasedDamagePct/100);const critMultiplier=1+critDamagePct/100;const chance=Math.min(100,Math.max(0,critChancePct))/100;return normal*((1-chance)+chance*critMultiplier)}
