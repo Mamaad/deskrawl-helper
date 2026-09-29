@@ -1,5 +1,6 @@
 "use client";
 import {TrackerClient} from "@/components/tracker/tracker-client";
+import {QuickOpenGameLog} from "@/components/tracker/quick-open-game-log";
 import {useI18n} from "@/components/i18n-provider";
 
 const fallbackSearchCommand='Get-ChildItem -Path "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Deskrawl" -Filter game.log -Recurse -ErrorAction SilentlyContinue';
@@ -11,11 +12,12 @@ export default function TrackerPage(){
   <h1 className="page-title">{t("tracker.title")}</h1>
   <p className="lead">{t("tracker.lead")}</p>
 
-  <div className="spacer"/><TrackerClient/><div className="spacer"/>
+  <div className="spacer"/><QuickOpenGameLog/><div className="spacer"/>
+  <TrackerClient/><div className="spacer"/>
 
   <section className="game-card">
    <div className="section-head">
-    <div><div className="eyebrow">WINDOWS · STEAM</div><h2>{t("tracker.findTitle")}</h2></div>
+    <div><div className="eyebrow">MANUAL FALLBACK</div><h2>{t("tracker.findTitle")}</h2></div>
     <span className="source-badge launch">Steam</span>
    </div>
 
